@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['userId'] = $row['id']; // Assuming 'id' is the primary key
             echo json_encode(["success" => true]);
         } else {
-            echo json_encode(["success" => false, "message" => "Inval password."]);
+            echo json_encode(["success" => false, "message" => "Invalid password."]);
         }
     } else {
         echo json_encode(["success" => false, "message" => "User not found."]);
